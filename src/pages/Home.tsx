@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { FaHeart, FaCalendarAlt, FaHandHoldingHeart, FaUsers, FaCross, FaPrayingHands, FaChurch } from 'react-icons/fa';
+import { FaHandHoldingHeart, FaUsers, FaPrayingHands, FaChurch } from 'react-icons/fa';
 
 const Home = () => {
   const { t } = useTranslation();

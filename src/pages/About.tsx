@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { FaHeart, FaUsers, FaAward, FaLightbulb, FaThLarge, FaCross, FaPrayingHands, FaBible } from 'react-icons/fa';
+import { FaHeart, FaUsers, FaLightbulb, FaThLarge, FaCross } from 'react-icons/fa';
 
 const About = () => {
   const { t } = useTranslation();

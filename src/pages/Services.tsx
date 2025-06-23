@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { FaChurch, FaPrayingHands, FaUsers, FaCalendarAlt, FaClock, FaPhone, FaEnvelope, FaCross, FaBible, FaMusic, FaBookReader, FaBed } from 'react-icons/fa';
+import { FaChurch, FaPrayingHands, FaUsers, FaCalendarAlt, FaPhone, FaEnvelope, FaBible, FaMusic, FaBookReader, FaBed } from 'react-icons/fa';
 import ScheduleItem from '../components/ScheduleItem';
 
 const Services = () => {

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-import { FaImages, FaChurch, FaUsers, FaCalendarAlt } from 'react-icons/fa';
+import { FaImages, FaUsers, FaCalendarAlt } from 'react-icons/fa';
 
 const allImages = [
   { src: '/assets/images/gallery/event1.jpg', category: 'events', title: 'Culte dominical' },

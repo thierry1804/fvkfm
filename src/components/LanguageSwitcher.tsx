@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaChevronDown } from 'react-icons/fa';
+import React from 'react';
 
-const flags: { [key: string]: JSX.Element } = {
+const flags: { [key: string]: React.JSX.Element } = {
   en: (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 3" className="w-5 h-auto rounded-sm">
       <rect width="5" height="3" fill="#00247d"/>
