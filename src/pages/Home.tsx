@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { FaHandHoldingHeart, FaUsers, FaPrayingHands, FaChurch } from 'react-icons/fa';
+import SlideshowBackground from '../components/SlideshowBackground';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -11,7 +12,8 @@ const Home = () => {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-primary-600 via-accent-600 to-secondary-800"></div>
-        
+        {/* Slideshow Background */}
+        <SlideshowBackground />
         {/* Animated Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-20 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-pulse-slow"></div>
@@ -21,26 +23,29 @@ const Home = () => {
 
         {/* Content */}
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <div className="animate-slide-up">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              <span className="block">FVKFM</span>
-              <span className="block text-3xl md:text-4xl font-light mt-2 opacity-90">
-                {t('welcome_message')}
-              </span>
-            </h1>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link 
-                to="/about" 
-                className="bg-white text-accent-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-accent-50 transition-all duration-300 transform hover:scale-105 shadow-large"
-              >
-                Découvrir notre église
-              </Link>
-              <Link 
-                to="/donations" 
-                className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-accent-600 transition-all duration-300 transform hover:scale-105"
-              >
-                Nous soutenir
-              </Link>
+          <div className="animate-slide-up relative overflow-hidden">
+            {/* Content above video */}
+            <div className="relative z-10">
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                <span className="block">FVKFM</span>
+                <span className="block text-3xl md:text-4xl font-light mt-2 opacity-90">
+                  {t('welcome_message')}
+                </span>
+              </h1>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link
+                  to="/about"
+                  className="bg-white text-accent-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-accent-50 transition-all duration-300 transform hover:scale-105 shadow-large"
+                >
+                  Découvrir notre église
+                </Link>
+                <Link
+                  to="/donations"
+                  className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-accent-600 transition-all duration-300 transform hover:scale-105"
+                >
+                  Nous soutenir
+                </Link>
+              </div>
             </div>
           </div>
         </div>
