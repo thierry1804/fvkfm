@@ -42,7 +42,7 @@ const Header = () => {
               </div>
               <div className="hidden sm:block">
                 <h1 className="text-lg font-bold text-secondary-800">FVKFM</h1>
-                <p className="text-xs text-accent-600 font-medium">Église Chrétienne</p>
+                <p className="text-xs text-accent-600 font-medium">Madagascar</p>
               </div>
             </Link>
           </div>
